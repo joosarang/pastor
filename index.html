@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 교역자회 인사</title>
+    
+    <!-- 카카오톡/SNS 공유 미리보기 설정 (Open Graph) -->
+    <meta property="og:title" content="2026년 3월 교역자회 예배지">
+    <meta property="og:description" content="2026년 3월 교역자회 예배 순서 및 주요 사역 안내입니다.">
+    <meta property="og:type" content="website">
+    
+    <title>2026년 3월 교역자회 예배지</title>
+    
     <!-- 폰트: 프리텐다드 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
     <!-- 아이콘: FontAwesome -->
@@ -25,9 +32,10 @@
         }
         /* 장평 및 가독성 최적화 클래스 */
         .tight-text {
-            letter-spacing: -0.025em; /* 자간을 줄여 장평이 줄어든 효과 */
-            line-height: 1.7; /* 행간을 충분히 주어 가독성 확보 */
-            word-break: keep-all; /* 단어 단위 줄바꿈으로 정갈하게 표시 */
+            letter-spacing: -0.04em; /* 자간을 더 줄여 장평 조절 효과 극대화 */
+            line-height: 1.7; 
+            word-break: keep-all; 
+            text-align: justify;
         }
     </style>
 </head>
@@ -87,13 +95,12 @@
             <div class="flex items-center justify-center space-x-3 mb-8">
                 <div class="h-px bg-indigo-200 flex-1"></div>
                 <h2 class="text-2xl font-bold text-indigo-900 flex items-center">
-                    <i class="fa-solid fa-cross text-indigo-600 mr-2"></i> 3월 교역자회 예배 순서
+                    <i class="fa-solid fa-cross text-indigo-600 mr-2"></i> 1부 예배 순서
                 </h2>
                 <div class="h-px bg-indigo-200 flex-1"></div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-indigo-100">
-                <!-- 순서 리스트 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-indigo-100 mb-6">
                 <div class="space-y-5 px-2 sm:px-4">
                     <div class="worship-grid items-center border-b border-gray-50 pb-3">
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">주관</span>
@@ -103,7 +110,6 @@
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">사회</span>
                         <span class="text-gray-800 font-semibold text-lg">이경래 목사</span>
                     </div>
-                    <!-- 찬송 -->
                     <div class="worship-grid items-center border-b border-gray-50 pb-3">
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">찬송</span>
                         <span class="text-gray-800 font-semibold text-lg">91장 <span class="text-base font-medium text-gray-500 ml-1">슬픈 마음 있는 사람</span></span>
@@ -127,10 +133,9 @@
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider mt-1">설교</span>
                         <div>
                             <span class="text-gray-900 font-bold text-xl block mb-1">“십자가에 달리신 하나님”</span>
-                            <span class="text-gray-600 text-base">홍병호 목사님</span>
+                            <span class="text-gray-600 text-base">홍병호 목사</span>
                         </div>
                     </div>
-                    <!-- 광고 -->
                     <div class="worship-grid items-center border-b border-gray-50 pb-3">
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">광고</span>
                         <span class="text-gray-800 font-semibold text-lg">박진규 목사</span>
@@ -143,17 +148,29 @@
             </div>
 
             <!-- 2부 순서 -->
-            <div class="mt-6 bg-indigo-600 rounded-2xl p-5 text-white flex items-center justify-between shadow-lg shadow-indigo-200">
+            <div class="bg-indigo-600 rounded-2xl p-5 text-white flex items-center justify-between shadow-lg shadow-indigo-200 mb-4 transition-transform hover:scale-[1.01]">
                 <div class="flex items-center">
                     <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-4">
                         <i class="fa-solid fa-mug-hot"></i>
                     </div>
                     <div>
-                        <span class="block text-indigo-200 text-xs font-bold tracking-widest uppercase">After Worship</span>
-                        <h3 class="text-xl font-bold">2부 목회 이야기와 교제</h3>
+                        <span class="block text-indigo-200 text-xs font-bold tracking-widest uppercase">2부</span>
+                        <h3 class="text-xl font-bold">목회 이야기와 교제</h3>
                     </div>
                 </div>
-                <i class="fa-solid fa-chevron-right text-indigo-400"></i>
+            </div>
+
+            <!-- 3부 순서 -->
+            <div class="bg-slate-700 rounded-2xl p-5 text-white flex items-center justify-between shadow-lg shadow-slate-200 transition-transform hover:scale-[1.01]">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div>
+                        <span class="block text-slate-400 text-xs font-bold tracking-widest uppercase">3부</span>
+                        <h3 class="text-xl font-bold">회의</h3>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -167,7 +184,6 @@
                 <div class="h-px bg-gray-300 flex-1"></div>
             </div>
 
-            <!-- 회장/부회장 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <div class="bg-blue-50 rounded-xl p-5 text-center border border-blue-100 transition-transform hover:-translate-y-1">
                     <span class="text-blue-600 font-bold text-sm block mb-1">회장</span>
@@ -181,7 +197,6 @@
                 </div>
             </div>
 
-            <!-- 총무/서기/회계 -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
                     <span class="text-gray-500 font-bold text-xs block mb-1">총무</span>
@@ -209,119 +224,37 @@
 
             <div class="space-y-6">
                 <div class="flex items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">
-                        1
-                    </div>
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">1</div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                            예배 <i class="fa-solid fa-church text-gray-400 ml-2 text-sm"></i>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            예배 인도는 <span class="font-semibold text-blue-700">감찰별로 담당</span>하여 진행합니다.
-                        </p>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">예배</h3>
+                        <p class="text-gray-600 leading-relaxed">예배 인도는 <span class="font-semibold text-blue-700">감찰별로 담당</span>하여 진행합니다.</p>
                     </div>
                 </div>
 
                 <div class="flex items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex-shrink-0 w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">
-                        2
-                    </div>
+                    <div class="flex-shrink-0 w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">2</div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                            목회 인터뷰 <i class="fa-solid fa-microphone text-gray-400 ml-2 text-sm"></i>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            임원회에서 선정한 목사님들의 목회와 삶에 대한 진솔한 이야기를 듣고, 배우며 이해하는 시간을 갖고자 합니다.
-                        </p>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">목회 인터뷰</h3>
+                        <p class="text-gray-600 leading-relaxed">목사님들의 목회와 삶에 대한 진솔한 이야기를 듣고, 배우며 이해하는 시간을 가집니다.</p>
                     </div>
                 </div>
 
                 <div class="flex items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex-shrink-0 w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">
-                        3
-                    </div>
+                    <div class="flex-shrink-0 w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">3</div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                            총동문대회 <i class="fa-solid fa-people-group text-gray-400 ml-2 text-sm"></i>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            연례행사로 올해도 <span class="font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded">4월 27일(월) ~ 29일(수)</span>까지 진행될 예정입니다.
-                        </p>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">총동문대회</h3>
+                        <p class="text-gray-600 leading-relaxed">올해는 <span class="font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded">4월 27일(월) ~ 29일(수)</span> 예정입니다.</p>
                     </div>
                 </div>
 
                 <div class="flex items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex-shrink-0 w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">
-                        4
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                            가을수양회 <i class="fa-solid fa-leaf text-gray-400 ml-2 text-sm"></i>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            자세한 일정은 지방회와 논의 후 회원들의 일정을 고려하여 이른 시일 안에 공지하도록 하겠습니다.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 회비 납부 안내 -->
-                <div class="flex items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
-                    <div class="flex-shrink-0 w-12 h-12 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">
-                        5
-                    </div>
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xl font-bold mr-4">4</div>
                     <div class="flex-1">
-                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
-                            회비 납부 안내 <i class="fa-solid fa-hand-holding-dollar text-gray-400 ml-2 text-sm"></i>
-                        </h3>
-                        <div class="bg-rose-50/50 rounded-xl p-4 border border-rose-100">
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex justify-between border-b border-rose-100 pb-2 text-gray-700">
-                                    <span class="font-semibold">대상</span>
-                                    <span>모든 회원 (은퇴목사 포함)</span>
-                                </li>
-                                <li class="flex justify-between border-b border-rose-100 py-2 text-gray-700">
-                                    <span class="font-semibold">회비</span>
-                                    <span class="text-rose-600 font-bold">120,000원</span>
-                                </li>
-                                <li class="pt-2">
-                                    <span class="block font-semibold text-gray-700 mb-1 text-xs">납부 계좌</span>
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-gray-900 font-bold select-all">국민은행 668401-04-002801</span>
-                                    </div>
-                                    <span class="text-gray-500 text-xs mt-1 block">(예금주: 홍병호)</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3월 회계 보고 및 명단 -->
-                <div class="mt-4 p-6 bg-indigo-50/50 rounded-2xl border border-indigo-100">
-                    <h3 class="text-lg font-bold text-indigo-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-calculator mr-2 text-indigo-500"></i> 3월 회계 보고
-                    </h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <!-- 회계 숫자 -->
-                        <div class="space-y-2 bg-white p-4 rounded-xl shadow-sm border border-indigo-100">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-500">이월금</span>
-                                <span class="font-medium text-gray-800">1,224,902</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-500">회 비</span>
-                                <span class="font-medium text-gray-800">1,320,000</span>
-                            </div>
-                            <div class="flex justify-between border-t border-indigo-100 pt-2 mt-2">
-                                <span class="font-bold text-indigo-900">합 계</span>
-                                <span class="font-bold text-indigo-700">2,544,902</span>
-                            </div>
-                        </div>
-                        <!-- 납부자 명단 -->
-                        <div class="bg-white p-4 rounded-xl shadow-sm border border-indigo-100">
-                            <span class="block text-xs font-bold text-indigo-400 mb-2 uppercase tracking-widest">회비 납부자 명단</span>
-                            <p class="text-sm text-gray-700 leading-relaxed">
-                                홍병호 박원영 이상철 이&nbsp;&nbsp;&nbsp;용 정재학 심재섭 전병권 박병국 김천주 유미영 김점숙
-                            </p>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">회비 납부 안내</h3>
+                        <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 text-sm">
+                            <p class="text-gray-700 font-medium mb-1">국민은행 668401-04-002801</p>
+                            <p class="font-bold text-indigo-800 text-base">예금주: 홍병호</p>
+                            <p class="text-gray-500 mt-1">회비: 120,000원 (은퇴목사 포함)</p>
                         </div>
                     </div>
                 </div>
@@ -334,7 +267,6 @@
                 <i class="fa-solid fa-quote-left text-amber-200 text-4xl absolute top-4 left-4 opacity-50"></i>
                 <div class="relative z-10">
                     <h2 class="text-xl font-bold text-gray-800 mb-4">감사와 당부드립니다</h2>
-                    <!-- 본문 텍스트에 장평 조절(tight-text) 클래스 적용 -->
                     <p class="text-gray-600 tight-text text-base">
                         여러 목사님의 사랑의 섬김으로 한 해의 방문 계획이 거의 완료된 상태입니다. 모든 교회를 돌아보고 함께 하는 것이 마땅하지만 부득불 어려운 점 양해 바라며, 올해에도 <span class="font-bold text-amber-700">함께 교제하고 함께 협력하는 교역자회</span>가 될 수 있도록 마음을 모아주시기를 당부드립니다.
                     </p>
@@ -351,7 +283,7 @@
             <div class="inline-flex items-center bg-indigo-900/50 rounded-full py-2 px-6 border border-indigo-800">
                 <i class="fa-solid fa-phone text-blue-400 mr-3"></i>
                 <span class="text-indigo-200 mr-2 text-sm">총무 박진규 목사</span>
-                <a href="tel:010-9873-8760" class="font-bold text-white hover:text-blue-300 transition-colors">010-9873-8760</a>
+                <a href="tel:010-9873-8760" class="font-bold text-white">010-9873-8760</a>
             </div>
             <p class="mt-6 text-xl font-bold text-indigo-800 tracking-widest uppercase">Shalom</p>
         </footer>
