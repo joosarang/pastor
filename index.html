@@ -23,6 +23,12 @@
             grid-template-columns: 80px 1fr;
             gap: 12px;
         }
+        /* 장평 및 가독성 최적화 클래스 */
+        .tight-text {
+            letter-spacing: -0.025em; /* 자간을 줄여 장평이 줄어든 효과 */
+            line-height: 1.7; /* 행간을 충분히 주어 가독성 확보 */
+            word-break: keep-all; /* 단어 단위 줄바꿈으로 정갈하게 표시 */
+        }
     </style>
 </head>
 <body class="flex justify-center py-10 px-4">
@@ -50,7 +56,7 @@
             </div>
         </header>
 
-        <!-- [위치 이동] 3월 첫번째 교역자회 안내 -->
+        <!-- 3월 첫번째 교역자회 안내 -->
         <section class="p-8 sm:p-10 bg-indigo-900 text-white border-b border-indigo-800">
             <h2 class="text-2xl font-bold text-yellow-300 mb-6 flex items-center justify-center sm:justify-start">
                 <i class="fa-regular fa-calendar-check mr-3"></i> 3월 첫번째 교역자회 안내
@@ -97,6 +103,11 @@
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">사회</span>
                         <span class="text-gray-800 font-semibold text-lg">이경래 목사</span>
                     </div>
+                    <!-- 찬송 -->
+                    <div class="worship-grid items-center border-b border-gray-50 pb-3">
+                        <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">찬송</span>
+                        <span class="text-gray-800 font-semibold text-lg">91장 <span class="text-base font-medium text-gray-500 ml-1">슬픈 마음 있는 사람</span></span>
+                    </div>
                     <div class="worship-grid items-center border-b border-gray-50 pb-3">
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">기도</span>
                         <span class="text-gray-800 font-semibold text-lg">허명섭 목사</span>
@@ -119,7 +130,7 @@
                             <span class="text-gray-600 text-base">홍병호 목사님</span>
                         </div>
                     </div>
-                    <!-- [신규 추가] 광고 -->
+                    <!-- 광고 -->
                     <div class="worship-grid items-center border-b border-gray-50 pb-3">
                         <span class="text-indigo-500 font-bold text-sm uppercase tracking-wider">광고</span>
                         <span class="text-gray-800 font-semibold text-lg">박진규 목사</span>
@@ -129,6 +140,20 @@
                         <span class="text-gray-800 font-semibold text-lg">전병권 목사</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- 2부 순서 -->
+            <div class="mt-6 bg-indigo-600 rounded-2xl p-5 text-white flex items-center justify-between shadow-lg shadow-indigo-200">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div>
+                        <span class="block text-indigo-200 text-xs font-bold tracking-widest uppercase">After Worship</span>
+                        <h3 class="text-xl font-bold">2부 목회 이야기와 교제</h3>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-indigo-400"></i>
             </div>
         </section>
 
@@ -270,7 +295,7 @@
                     </div>
                 </div>
 
-                <!-- [신규 추가] 3월 회계 보고 및 명단 -->
+                <!-- 3월 회계 보고 및 명단 -->
                 <div class="mt-4 p-6 bg-indigo-50/50 rounded-2xl border border-indigo-100">
                     <h3 class="text-lg font-bold text-indigo-900 mb-4 flex items-center">
                         <i class="fa-solid fa-calculator mr-2 text-indigo-500"></i> 3월 회계 보고
@@ -309,10 +334,11 @@
                 <i class="fa-solid fa-quote-left text-amber-200 text-4xl absolute top-4 left-4 opacity-50"></i>
                 <div class="relative z-10">
                     <h2 class="text-xl font-bold text-gray-800 mb-4">감사와 당부드립니다</h2>
-                    <p class="text-gray-600 leading-loose text-justify break-keep text-base">
+                    <!-- 본문 텍스트에 장평 조절(tight-text) 클래스 적용 -->
+                    <p class="text-gray-600 tight-text text-base">
                         여러 목사님의 사랑의 섬김으로 한 해의 방문 계획이 거의 완료된 상태입니다. 모든 교회를 돌아보고 함께 하는 것이 마땅하지만 부득불 어려운 점 양해 바라며, 올해에도 <span class="font-bold text-amber-700">함께 교제하고 함께 협력하는 교역자회</span>가 될 수 있도록 마음을 모아주시기를 당부드립니다.
                     </p>
-                    <p class="text-gray-600 leading-loose text-justify break-keep mt-4 text-base">
+                    <p class="text-gray-600 tight-text mt-4 text-base">
                         저희 임원들도 최선을 다해 교역자회를 섬기도록 할 것이며, 회원 여러분들의 <span class="font-bold text-amber-700">모든 기쁨과 슬픔에 함께하는</span> 교역자회가 되도록 노력하겠습니다.
                     </p>
                 </div>
