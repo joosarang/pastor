@@ -25,10 +25,18 @@
             -webkit-font-smoothing: antialiased;
         }
         
+        /* 모바일 우선, sm 이상에서 간격 확대 */
         .worship-grid {
             display: grid;
-            grid-template-columns: 75px 1fr;
-            gap: 16px;
+            grid-template-columns: 60px 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .worship-grid {
+                grid-template-columns: 75px 1fr;
+                gap: 16px;
+            }
         }
 
         .gradient-border {
@@ -105,16 +113,16 @@
             <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(#ffffff 1.5px, transparent 1.5px); background-size: 30px 30px;"></div>
             
             <div class="relative z-10">
-                <div class="inline-flex items-center py-1.5 px-5 rounded-full bg-white/10 text-blue-100 text-sm font-bold mb-6 backdrop-blur-md border border-white/20 tracking-tight">
+                <div class="inline-flex items-center py-1.5 px-4 sm:px-5 rounded-full bg-white/10 text-blue-100 text-xs sm:text-sm font-bold mb-6 backdrop-blur-md border border-white/20 tracking-tight">
                     2026 교역자회에서 인사드립니다
                 </div>
-                <h1 class="text-3xl sm:text-4xl font-black leading-tight mb-8">
+                <h1 class="text-3xl sm:text-4xl font-black leading-tight mb-8 break-keep">
                     올 한 해 교역자회에<br>
                     <span class="text-yellow-300">웃음꽃</span>이 활짝 피고,<br>
                     <span class="text-yellow-300">위로와 사랑</span>이 넘쳐나길
                 </h1>
                 <div class="w-16 h-1 bg-yellow-400 mx-auto mb-8 rounded-full"></div>
-                <p class="text-indigo-100 leading-relaxed font-normal text-base sm:text-lg max-w-sm mx-auto opacity-90">
+                <p class="text-indigo-100 leading-relaxed font-normal text-[15px] sm:text-lg max-w-sm mx-auto opacity-90 break-keep">
                     목사님, 전도사님, 사모님들의<br>많은 관심과 참여를 부탁드립니다.
                 </p>
             </div>
@@ -126,141 +134,141 @@
                 <i class="fa-regular fa-calendar-check text-indigo-600 mr-2"></i> 3월 교역자회 안내
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="flex items-center bg-white p-6 rounded-2xl shadow-sm border border-slate-200 group transition-all hover:border-indigo-300">
+                <div class="flex items-center bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 group transition-all hover:border-indigo-300">
                     <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg shadow-indigo-100">
                         <i class="fa-regular fa-clock text-xl"></i>
                     </div>
                     <div>
                         <p class="text-[11px] text-slate-400 font-bold mb-0.5 uppercase tracking-wider">일시</p>
-                        <p class="font-extrabold text-slate-900 text-lg">3월 9일(월) 11시</p>
+                        <p class="font-extrabold text-slate-900 text-[17px] sm:text-lg tracking-tight">3월 9일(월) 11시</p>
                     </div>
                 </div>
-                <div class="flex items-center bg-white p-6 rounded-2xl shadow-sm border border-slate-200 group transition-all hover:border-blue-300">
+                <div class="flex items-center bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-slate-200 group transition-all hover:border-blue-300">
                     <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mr-4 flex-shrink-0 shadow-lg shadow-blue-100">
                         <i class="fa-solid fa-location-dot text-xl"></i>
                     </div>
                     <div class="flex-1">
                         <p class="text-[11px] text-slate-400 font-bold mb-0.5 uppercase tracking-wider">장소</p>
-                        <p class="font-extrabold text-slate-900 text-lg leading-tight">열린교회<br><span class="text-blue-600 text-sm font-medium">(홍병호 목사 시무)</span></p>
+                        <p class="font-extrabold text-slate-900 text-[17px] sm:text-lg leading-tight tracking-tight">열린교회<br><span class="text-blue-600 text-xs sm:text-sm font-medium tracking-normal">(홍병호 목사 시무)</span></p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 1부 예배 순서 -->
-        <section class="p-8 sm:p-12 bg-white">
-            <div class="flex items-center justify-center mb-10">
+        <section class="p-6 sm:p-12 bg-white">
+            <div class="flex items-center justify-center mb-8 sm:mb-10">
                 <div class="h-px bg-slate-200 flex-1"></div>
-                <h2 class="px-6 text-2xl font-black text-slate-900 flex items-center">
-                    <i class="fa-solid fa-cross text-indigo-700 mr-3"></i> 1부 예배 순서
+                <h2 class="px-4 sm:px-6 text-xl sm:text-2xl font-black text-slate-900 flex items-center">
+                    <i class="fa-solid fa-cross text-indigo-700 mr-2 sm:mr-3"></i> 1부 예배 순서
                 </h2>
                 <div class="h-px bg-slate-200 flex-1"></div>
             </div>
 
-            <div class="space-y-1 max-w-xl mx-auto p-4 sm:p-8 bg-slate-50/50 rounded-3xl border border-slate-100 shadow-sm">
+            <div class="space-y-1 max-w-xl mx-auto p-4 sm:p-8 bg-slate-50/50 rounded-2xl sm:rounded-3xl border border-slate-100 shadow-sm">
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">주관</span>
-                    <span class="text-slate-900 font-bold text-lg">시흥감찰</span>
+                    <span class="text-slate-900 font-bold text-base sm:text-lg">시흥감찰</span>
                 </div>
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">사회</span>
-                    <span class="text-slate-900 font-bold text-lg">이경래 목사</span>
+                    <span class="text-slate-900 font-bold text-base sm:text-lg">이경래 목사</span>
                 </div>
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">찬송</span>
-                    <div class="flex items-baseline">
-                        <span class="text-slate-900 font-bold text-lg">91장</span>
-                        <span class="text-slate-500 text-sm ml-2 font-medium">슬픈 마음 있는 사람</span>
+                    <div class="flex items-baseline flex-wrap">
+                        <span class="text-slate-900 font-bold text-base sm:text-lg">91장</span>
+                        <span class="text-slate-500 text-xs sm:text-sm ml-2 font-medium">슬픈 마음 있는 사람</span>
                     </div>
                 </div>
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">기도</span>
-                    <span class="text-slate-900 font-bold text-lg">허명섭 목사</span>
+                    <span class="text-slate-900 font-bold text-base sm:text-lg">허명섭 목사</span>
                 </div>
                 <div class="worship-grid items-start py-4 border-b border-slate-200/50">
-                    <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase mt-1.5">특송</span>
+                    <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase mt-1">특송</span>
                     <div>
-                        <span class="text-slate-900 font-bold text-lg block">시흥감찰 목회자</span>
-                        <span class="text-indigo-500 text-xs font-bold">곡: 열려라 에바다</span>
+                        <span class="text-slate-900 font-bold text-base sm:text-lg block">시흥감찰 목회자</span>
+                        <span class="text-indigo-500 text-[11px] sm:text-xs font-bold">곡: 열려라 에바다</span>
                     </div>
                 </div>
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">말씀</span>
-                    <span class="text-slate-900 font-bold text-lg">요한복음 18:1-19, 30</span>
+                    <span class="text-slate-900 font-bold text-[15px] sm:text-lg tracking-tight">요한복음 18:1-19, 30</span>
                 </div>
-                <div class="worship-grid items-start py-6 border-b-2 border-indigo-200 bg-white -mx-2 px-4 rounded-2xl shadow-sm mt-2 mb-2">
-                    <span class="text-indigo-700 font-black text-xs tracking-tighter uppercase mt-1.5">설교</span>
+                <div class="worship-grid items-start py-5 sm:py-6 border-b-2 border-indigo-200 bg-white -mx-2 sm:-mx-4 px-4 sm:px-6 rounded-2xl shadow-sm mt-2 mb-2">
+                    <span class="text-indigo-700 font-black text-xs tracking-tighter uppercase mt-1">설교</span>
                     <div>
-                        <h3 class="text-indigo-900 font-black text-xl mb-1.5 leading-tight">“십자가에 달리신 하나님”</h3>
-                        <span class="text-slate-600 font-bold">홍병호 목사</span>
+                        <h3 class="text-indigo-900 font-black text-lg sm:text-xl mb-1.5 leading-tight break-keep">“십자가에 달리신 하나님”</h3>
+                        <span class="text-slate-600 font-bold text-sm sm:text-base">홍병호 목사</span>
                     </div>
                 </div>
                 <div class="worship-grid items-center py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">광고</span>
-                    <span class="text-slate-900 font-bold text-lg">박진규 목사</span>
+                    <span class="text-slate-900 font-bold text-base sm:text-lg">박진규 목사</span>
                 </div>
                 <div class="worship-grid items-center py-4">
                     <span class="text-indigo-600 font-black text-xs tracking-tighter uppercase">축도</span>
-                    <span class="text-slate-900 font-bold text-lg">전병권 목사</span>
+                    <span class="text-slate-900 font-bold text-base sm:text-lg">전병권 목사</span>
                 </div>
             </div>
 
             <!-- 하단 교제/회의 카드 -->
-            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="bg-indigo-600 rounded-2xl p-6 text-white shadow-xl shadow-indigo-100 flex items-center">
-                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <i class="fa-solid fa-mug-hot"></i>
+            <div class="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div class="bg-indigo-600 rounded-2xl p-5 sm:p-6 text-white shadow-xl shadow-indigo-100 flex items-center">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fa-solid fa-mug-hot sm:text-lg"></i>
                     </div>
                     <div>
-                        <p class="text-indigo-200 text-[11px] font-bold tracking-widest mb-1 uppercase">제2부 교제</p>
-                        <h4 class="font-black text-xl">목회 이야기 나누기</h4>
+                        <p class="text-indigo-200 text-[10px] sm:text-[11px] font-bold tracking-widest mb-0.5 sm:mb-1 uppercase">제2부 교제</p>
+                        <h4 class="font-black text-lg sm:text-xl">목회 이야기 나누기</h4>
                     </div>
                 </div>
-                <div class="bg-slate-800 rounded-2xl p-6 text-white shadow-xl shadow-slate-200 flex items-center">
-                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                        <i class="fa-solid fa-gavel"></i>
+                <div class="bg-slate-800 rounded-2xl p-5 sm:p-6 text-white shadow-xl shadow-slate-200 flex items-center">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fa-solid fa-gavel sm:text-lg"></i>
                     </div>
                     <div>
-                        <p class="text-slate-400 text-[11px] font-bold tracking-widest mb-1 uppercase">제3부 회의</p>
-                        <h4 class="font-black text-xl">회무 및 안건 토의</h4>
+                        <p class="text-slate-400 text-[10px] sm:text-[11px] font-bold tracking-widest mb-0.5 sm:mb-1 uppercase">제3부 회의</p>
+                        <h4 class="font-black text-lg sm:text-xl">회무 및 안건 토의</h4>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 광고 섹션 -->
-        <section class="p-8 sm:p-12 bg-slate-50 border-t border-slate-100">
-            <h2 class="text-center text-2xl font-black text-slate-800 mb-10 flex items-center justify-center">
+        <section class="p-6 sm:p-12 bg-slate-50 border-t border-slate-100">
+            <h2 class="text-center text-xl sm:text-2xl font-black text-slate-800 mb-8 sm:mb-10 flex items-center justify-center">
                 <i class="fa-solid fa-bullhorn text-orange-500 mr-3"></i> 광 고
             </h2>
-            <div class="space-y-4 max-w-xl mx-auto">
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-blue-200">
-                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-black mr-4 flex-shrink-0">1</div>
-                    <p class="text-slate-700 text-base leading-relaxed">
+            <div class="space-y-3 sm:space-y-4 max-w-xl mx-auto">
+                <div class="flex items-start bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-blue-200">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-blue-50 text-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center font-black mr-3 sm:mr-4 flex-shrink-0 text-sm sm:text-base">1</div>
+                    <p class="text-slate-700 text-[15px] sm:text-base leading-relaxed break-keep mt-0.5 sm:mt-0">
                         교역자회 모임에 참석하신 <span class="font-bold text-blue-700">부천지방회 가족 여러분</span>을 환영합니다.
                     </p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-orange-200">
-                    <div class="w-10 h-10 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center font-black mr-4 flex-shrink-0">2</div>
-                    <p class="text-slate-700 text-base leading-relaxed">
+                <div class="flex items-start bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-orange-200">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-orange-50 text-orange-600 rounded-lg sm:rounded-xl flex items-center justify-center font-black mr-3 sm:mr-4 flex-shrink-0 text-sm sm:text-base">2</div>
+                    <p class="text-slate-700 text-[15px] sm:text-base leading-relaxed break-keep mt-0.5 sm:mt-0">
                         장소와 식사를 제공해 주신 <span class="font-bold text-orange-700">열린교회 홍병호 목사님과 성도분들</span>께 감사를 드립니다. 아울러 순서를 담당하신 <span class="font-bold text-orange-700">시흥감찰</span>에게도 감사를 드립니다.
                     </p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-green-200">
-                    <div class="w-10 h-10 bg-green-50 text-green-600 rounded-xl flex items-center justify-center font-black mr-4 flex-shrink-0">3</div>
-                    <p class="text-slate-700 text-base leading-relaxed">
+                <div class="flex items-start bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-green-200">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-green-50 text-green-600 rounded-lg sm:rounded-xl flex items-center justify-center font-black mr-3 sm:mr-4 flex-shrink-0 text-sm sm:text-base">3</div>
+                    <p class="text-slate-700 text-[15px] sm:text-base leading-relaxed break-keep mt-0.5 sm:mt-0">
                         교역자회 예배는 <span class="font-bold text-green-700">각 감찰이 담당</span>합니다. 감찰별로 준비를 해 주시기 바랍니다.
                     </p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-purple-200">
-                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center font-black mr-4 flex-shrink-0">4</div>
-                    <p class="text-slate-700 text-base leading-relaxed">
+                <div class="flex items-start bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-purple-200">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-purple-50 text-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center font-black mr-3 sm:mr-4 flex-shrink-0 text-sm sm:text-base">4</div>
+                    <p class="text-slate-700 text-[15px] sm:text-base leading-relaxed break-keep mt-0.5 sm:mt-0">
                         다가오는 <span class="font-bold text-purple-700">4월 27일(월) ~ 29일(수)</span>에는 교단 총동문대회가 예정되어 있습니다.
                     </p>
                 </div>
-                <div class="flex items-start bg-white p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-teal-200">
-                    <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center font-black mr-4 flex-shrink-0">5</div>
-                    <p class="text-slate-700 text-base leading-relaxed">
+                <div class="flex items-start bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm transition-all hover:border-teal-200">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-teal-50 text-teal-600 rounded-lg sm:rounded-xl flex items-center justify-center font-black mr-3 sm:mr-4 flex-shrink-0 text-sm sm:text-base">5</div>
+                    <p class="text-slate-700 text-[15px] sm:text-base leading-relaxed break-keep mt-0.5 sm:mt-0">
                         개교회 소식은 <span class="font-bold text-teal-700">총무 박진규 목사(010-9873-8760)</span>를 통해 알려 주시기 바랍니다.
                     </p>
                 </div>
@@ -268,93 +276,97 @@
         </section>
 
         <!-- 회계 보고 -->
-        <section class="p-6 sm:p-12 bg-white border-t border-slate-100">
+        <section class="p-5 sm:p-12 bg-white border-t border-slate-100">
             <div class="gradient-border max-w-xl mx-auto">
                 <div class="bg-white rounded-[1.4rem] overflow-hidden">
-                    <div class="bg-indigo-950 p-5 text-center">
-                        <h3 class="text-yellow-400 font-black text-xl flex items-center justify-center">
+                    <div class="bg-indigo-950 p-4 sm:p-5 text-center">
+                        <h3 class="text-yellow-400 font-black text-lg sm:text-xl flex items-center justify-center">
                             <i class="fa-solid fa-calculator mr-2"></i> 회계 보고
                         </h3>
                     </div>
                     
-                    <div class="p-6">
-                        <!-- 대차대조표 그리드 -->
-                        <div class="grid grid-cols-2 border border-slate-200 rounded-2xl overflow-hidden mb-6">
+                    <div class="p-4 sm:p-6">
+                        <!-- 대차대조표 그리드 (모바일에서는 세로, PC에서는 가로 정렬) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 border border-slate-200 rounded-2xl overflow-hidden mb-5 sm:mb-6">
                             <!-- 좌측: 수입 -->
-                            <div class="border-r border-slate-200 flex flex-col bg-white">
-                                <div class="bg-blue-600 text-white text-center py-2.5 text-xs font-black tracking-widest">수입</div>
-                                <div class="p-5 flex-1 space-y-4">
-                                    <div class="flex justify-between items-center text-sm">
+                            <div class="border-b sm:border-b-0 sm:border-r border-slate-200 flex flex-col bg-white">
+                                <div class="bg-blue-600 text-white text-center py-2 sm:py-2.5 text-xs font-black tracking-widest">수입</div>
+                                <div class="p-4 sm:p-5 flex-1 space-y-3 sm:space-y-4">
+                                    <div class="flex justify-between items-center text-[13px] sm:text-sm">
                                         <span class="text-slate-400 font-bold">이월금</span>
                                         <span class="text-slate-900 font-extrabold tracking-tighter">1,224,902</span>
                                     </div>
-                                    <div class="flex justify-between items-center text-sm">
+                                    <div class="flex justify-between items-center text-[13px] sm:text-sm">
                                         <span class="text-slate-400 font-bold">회 비</span>
                                         <span class="text-slate-900 font-extrabold tracking-tighter">1,320,000</span>
                                     </div>
                                 </div>
-                                <div class="bg-blue-50 border-t border-slate-200 p-4 flex justify-between items-center">
-                                    <span class="text-blue-900 font-black text-xs">수입 합계</span>
-                                    <span class="text-blue-700 font-black text-sm tracking-tighter">2,544,902</span>
+                                <div class="bg-blue-50 border-t border-slate-200 p-3 sm:p-4 flex justify-between items-center">
+                                    <span class="text-blue-900 font-black text-[11px] sm:text-xs">수입 합계</span>
+                                    <span class="text-blue-700 font-black text-xs sm:text-sm tracking-tighter">2,544,902</span>
                                 </div>
                             </div>
 
                             <!-- 우측: 지출 -->
                             <div class="flex flex-col bg-white">
-                                <div class="bg-indigo-600 text-white text-center py-2.5 text-xs font-black tracking-widest">지출</div>
-                                <div class="p-5 flex-1 space-y-4">
-                                    <div class="flex flex-col text-sm">
-                                        <span class="text-slate-400 font-bold mb-1">전임원선물비</span>
+                                <div class="bg-indigo-600 text-white text-center py-2 sm:py-2.5 text-xs font-black tracking-widest">지출</div>
+                                <div class="p-4 sm:p-5 flex-1 space-y-3 sm:space-y-4">
+                                    <div class="flex justify-between sm:flex-col items-center sm:items-end text-[13px] sm:text-sm">
+                                        <span class="text-slate-400 font-bold sm:mb-1">전임원선물비</span>
                                         <span class="text-slate-900 font-extrabold tracking-tighter text-right">300,000</span>
                                     </div>
                                 </div>
-                                <div class="bg-indigo-50 border-t border-slate-200 p-4 flex justify-between items-center">
-                                    <span class="text-indigo-900 font-black text-xs">지출 합계</span>
-                                    <span class="text-indigo-700 font-black text-sm tracking-tighter">300,000</span>
+                                <div class="bg-indigo-50 border-t border-slate-200 p-3 sm:p-4 flex justify-between items-center">
+                                    <span class="text-indigo-900 font-black text-[11px] sm:text-xs">지출 합계</span>
+                                    <span class="text-indigo-700 font-black text-xs sm:text-sm tracking-tighter">300,000</span>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- 최종 잔액 -->
-                        <div class="bg-gradient-to-r from-indigo-700 to-indigo-900 p-6 rounded-2xl flex justify-between items-center shadow-lg shadow-indigo-100 mb-8">
-                            <span class="text-indigo-100 font-black text-sm tracking-widest">최종 잔액</span>
-                            <span class="text-white font-black text-2xl tracking-tighter">₩ 2,244,902</span>
+                        <div class="bg-gradient-to-r from-indigo-700 to-indigo-900 p-5 sm:p-6 rounded-2xl flex justify-between items-center shadow-lg shadow-indigo-100 mb-6 sm:mb-8">
+                            <span class="text-indigo-100 font-black text-xs sm:text-sm tracking-widest">최종 잔액</span>
+                            <span class="text-white font-black text-xl sm:text-2xl tracking-tighter">₩ 2,244,902</span>
                         </div>
 
                         <!-- 회비 납부자 -->
-                        <div class="bg-slate-50/50 rounded-2xl p-6 border border-slate-200">
-                            <div class="flex items-center justify-between mb-5">
-                                <h4 class="text-sm font-black text-slate-900 flex items-center">
+                        <div class="bg-slate-50/50 rounded-2xl p-4 sm:p-6 border border-slate-200">
+                            <div class="flex items-center justify-between mb-4 sm:mb-5">
+                                <h4 class="text-xs sm:text-sm font-black text-slate-900 flex items-center">
                                     <i class="fa-solid fa-check-double text-indigo-600 mr-2"></i> 회비 납부자 (11명)
                                 </h4>
                             </div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">김점숙</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">김천주</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">박병국</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">박원영</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">심재섭</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">유미영</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm"><span class="name-spacing">이용</span></span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">이상철</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">전병권</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">정재학</span>
-                                <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-slate-600 text-xs font-bold shadow-sm">홍병호</span>
+                            <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">김점숙</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">김천주</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">박병국</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">박원영</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">심재섭</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">유미영</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm"><span class="name-spacing">이용</span></span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">이상철</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">전병권</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">정재학</span>
+                                <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-white border border-slate-200 rounded-md sm:rounded-lg text-slate-600 text-[11px] sm:text-xs font-bold shadow-sm">홍병호</span>
                             </div>
                         </div>
 
                         <!-- 계좌 정보 -->
-                        <div class="mt-8 bg-slate-900 p-8 rounded-2xl text-center relative overflow-hidden group cursor-pointer no-print" onclick="copyAccount()">
-                            <div class="absolute top-0 right-0 p-4 opacity-20 group-hover:opacity-100 transition-opacity">
-                                <i class="fa-regular fa-copy text-white text-2xl"></i>
+                        <div class="mt-6 sm:mt-8 bg-slate-900 p-6 sm:p-8 rounded-2xl text-center relative overflow-hidden group cursor-pointer no-print" onclick="copyAccount()">
+                            <div class="absolute top-0 right-0 p-3 sm:p-4 opacity-30 sm:opacity-20 group-hover:opacity-100 transition-opacity">
+                                <i class="fa-regular fa-copy text-white text-xl sm:text-2xl"></i>
                             </div>
-                            <div class="inline-flex items-center bg-indigo-500/20 border border-indigo-500/30 px-5 py-2 rounded-full mb-6">
-                                <span class="text-indigo-200 text-xs font-bold mr-2 uppercase tracking-tighter">년회비 안내</span>
-                                <span class="text-yellow-400 font-black text-lg">120,000원</span>
-                                <span class="text-indigo-400 text-[10px] ml-2 font-medium">(은퇴목사 포함)</span>
+                            <div class="inline-flex flex-col sm:flex-row items-center bg-indigo-500/20 border border-indigo-500/30 px-4 sm:px-5 py-2 rounded-xl sm:rounded-full mb-5 sm:mb-6 gap-1 sm:gap-0">
+                                <div>
+                                    <span class="text-indigo-200 text-[10px] sm:text-xs font-bold sm:mr-2 uppercase tracking-tighter">년회비 안내</span>
+                                </div>
+                                <div>
+                                    <span class="text-yellow-400 font-black text-base sm:text-lg">120,000원</span>
+                                    <span class="text-indigo-400 text-[10px] sm:ml-2 font-medium">(은퇴목사 포함)</span>
+                                </div>
                             </div>
-                            <p class="text-white text-2xl sm:text-3xl font-black mb-2 tracking-tighter">국민 668401-04-002801</p>
-                            <p class="text-indigo-300 font-bold">예금주: 홍병호 <span class="ml-2 text-[10px] font-normal opacity-50 underline underline-offset-4">터치하여 복사</span></p>
+                            <p class="text-white text-xl sm:text-3xl font-black mb-2 tracking-tighter break-all px-4 sm:px-0">국민 668401-04-002801</p>
+                            <p class="text-indigo-300 font-bold text-sm sm:text-base">예금주: 홍병호 <span class="block sm:inline sm:ml-2 mt-2 sm:mt-0 text-[11px] sm:text-[10px] font-normal opacity-80 sm:opacity-50 underline underline-offset-4">터치하여 복사</span></p>
                         </div>
                     </div>
                 </div>
@@ -362,15 +374,15 @@
         </section>
 
         <!-- 감사와 당부 -->
-        <section class="p-8 sm:p-12 bg-amber-50/50 border-t border-slate-100">
-            <div class="bg-white p-8 rounded-3xl border-l-4 border-amber-400 shadow-sm relative max-w-xl mx-auto">
-                <i class="fa-solid fa-quote-left text-amber-200 text-4xl absolute top-6 left-6 opacity-40"></i>
+        <section class="p-6 sm:p-12 bg-amber-50/50 border-t border-slate-100">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl border-l-4 border-amber-400 shadow-sm relative max-w-xl mx-auto">
+                <i class="fa-solid fa-quote-left text-amber-200 text-3xl sm:text-4xl absolute top-5 sm:top-6 left-5 sm:left-6 opacity-40"></i>
                 <div class="relative z-10">
-                    <h2 class="text-xl font-black text-slate-800 mb-6 italic">감사와 당부 드립니다</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4 text-justify">
+                    <h2 class="text-lg sm:text-xl font-black text-slate-800 mb-4 sm:mb-6 italic">감사와 당부 드립니다</h2>
+                    <p class="text-slate-600 text-[13px] sm:text-sm leading-relaxed mb-4 text-justify break-keep">
                         여러 목사님의 사랑의 섬김으로 한 해의 방문 계획이 거의 완료되었습니다. 모든 교회를 다 돌아보고 함께 하는 것이 마땅하지만 부득불 어려운 점 양해 바라며, 올해에도 <span class="font-bold text-amber-700 underline decoration-amber-200">함께 교제하고 협력하는 교역자회</span>가 될 수 있도록 마음을 모아주시기를 당부드립니다.
                     </p>
-                    <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                    <p class="text-slate-600 text-[13px] sm:text-sm leading-relaxed text-justify break-keep">
                         임원들도 최선을 다해 섬길 것이며, 회원 여러분들의 모든 <span class="font-bold text-amber-700 underline decoration-amber-200">기쁨과 슬픔에 늘 함께하는</span> 교역자회가 되도록 노력하겠습니다.
                     </p>
                 </div>
@@ -378,115 +390,117 @@
         </section>
 
         <!-- 임원진 정보 -->
-        <section class="p-8 sm:p-12 bg-white border-t border-slate-100">
-            <h2 class="text-center text-xl font-black text-slate-800 mb-10">교역자회를 섬기는 분들</h2>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-                <div class="bg-indigo-50/50 p-6 rounded-2xl border border-indigo-100 text-center shadow-sm">
-                    <span class="text-indigo-600 text-sm font-black block mb-2">회장</span>
-                    <p class="text-xl font-black text-slate-900">박원영 목사</p>
-                    <p class="text-slate-400 text-xs font-medium">창대교회</p>
+        <section class="p-6 sm:p-12 bg-white border-t border-slate-100">
+            <h2 class="text-center text-xl font-black text-slate-800 mb-6 sm:mb-10">교역자회를 섬기는 분들</h2>
+            <!-- 회장, 부회장: 세로 모드에선 1줄씩 표기 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div class="bg-indigo-50/50 p-5 sm:p-6 rounded-2xl border border-indigo-100 text-center shadow-sm flex flex-col sm:block justify-center">
+                    <span class="text-indigo-600 text-[11px] sm:text-sm font-black block sm:mb-2">회장</span>
+                    <p class="text-lg sm:text-xl font-black text-slate-900 mt-0.5 sm:mt-0">박원영 목사</p>
+                    <p class="text-slate-400 text-[11px] sm:text-xs font-medium mt-1 sm:mt-0">창대교회</p>
                 </div>
-                <div class="bg-indigo-50/50 p-6 rounded-2xl border border-indigo-100 text-center shadow-sm">
-                    <span class="text-indigo-600 text-sm font-black block mb-2">부회장</span>
-                    <p class="text-xl font-black text-slate-900">이경래 목사</p>
-                    <p class="text-slate-400 text-xs font-medium">바울교회</p>
+                <div class="bg-indigo-50/50 p-5 sm:p-6 rounded-2xl border border-indigo-100 text-center shadow-sm flex flex-col sm:block justify-center">
+                    <span class="text-indigo-600 text-[11px] sm:text-sm font-black block sm:mb-2">부회장</span>
+                    <p class="text-lg sm:text-xl font-black text-slate-900 mt-0.5 sm:mt-0">이경래 목사</p>
+                    <p class="text-slate-400 text-[11px] sm:text-xs font-medium mt-1 sm:mt-0">바울교회</p>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-slate-50 py-5 px-2 rounded-2xl border border-slate-200 text-center">
-                    <span class="text-slate-500 text-xs font-black block mb-2">총 무</span>
+            <!-- 총무, 서기, 회계: 세로 모드에선 1줄씩 표기 -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div class="bg-slate-50 py-4 px-2 sm:py-5 sm:px-2 rounded-2xl border border-slate-200 text-center flex sm:block justify-between sm:justify-center items-center px-6 sm:px-2">
+                    <span class="text-slate-500 text-[11px] sm:text-xs font-black block sm:mb-2">총 무</span>
                     <p class="text-base font-black text-slate-800">박진규 목사</p>
                 </div>
-                <div class="bg-slate-50 py-5 px-2 rounded-2xl border border-slate-200 text-center">
-                    <span class="text-slate-500 text-xs font-black block mb-2">서 기</span>
+                <div class="bg-slate-50 py-4 px-2 sm:py-5 sm:px-2 rounded-2xl border border-slate-200 text-center flex sm:block justify-between sm:justify-center items-center px-6 sm:px-2">
+                    <span class="text-slate-500 text-[11px] sm:text-xs font-black block sm:mb-2">서 기</span>
                     <p class="text-base font-black text-slate-800">이성결 목사</p>
                 </div>
-                <div class="bg-slate-50 py-5 px-2 rounded-2xl border border-slate-200 text-center">
-                    <span class="text-slate-500 text-xs font-black block mb-2">회 계</span>
+                <div class="bg-slate-50 py-4 px-2 sm:py-5 sm:px-2 rounded-2xl border border-slate-200 text-center flex sm:block justify-between sm:justify-center items-center px-6 sm:px-2">
+                    <span class="text-slate-500 text-[11px] sm:text-xs font-black block sm:mb-2">회 계</span>
                     <p class="text-base font-black text-slate-800">홍병호 목사</p>
                 </div>
             </div>
         </section>
 
         <!-- 연간 일정 -->
-        <section class="p-8 sm:p-12 bg-slate-50 border-t border-slate-100">
-            <h2 class="text-center text-xl font-black text-slate-900 mb-12 flex items-center justify-center">
-                <i class="fa-solid fa-map-location-dot text-indigo-700 mr-3"></i> 2026년 교역자회 장소
+        <section class="p-6 sm:p-12 bg-slate-50 border-t border-slate-100">
+            <h2 class="text-center text-xl font-black text-slate-900 mb-10 flex items-center justify-center">
+                <i class="fa-solid fa-map-location-dot text-indigo-700 mr-2 sm:mr-3"></i> 2026년 교역자회 장소
             </h2>
             
-            <div class="relative pl-8 border-l-2 border-slate-200 space-y-10 max-w-sm mx-auto">
+            <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-200 space-y-8 sm:space-y-10 max-w-sm mx-auto ml-4 sm:mx-auto">
                 <!-- 3월 -->
                 <div class="relative">
-                    <div class="year-dot active absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <div class="year-dot active absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
                     <div>
-                        <span class="inline-block px-2.5 py-1 rounded-md bg-indigo-600 text-white text-[10px] font-black mb-1.5 uppercase">이번 달</span>
-                        <h4 class="text-lg font-black text-slate-900">3월 : 열린교회</h4>
+                        <span class="inline-block px-2 py-1 sm:px-2.5 rounded-md bg-indigo-600 text-white text-[9px] sm:text-[10px] font-black mb-1.5 uppercase tracking-wider">이번 달</span>
+                        <h4 class="text-base sm:text-lg font-black text-slate-900">3월 : 열린교회</h4>
                     </div>
                 </div>
                 <!-- 4월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">4월 : 한샘교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">4월 : 한샘교회</h4>
                 </div>
                 <!-- 6월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">6월 : 부천영광교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">6월 : 부천영광교회</h4>
                 </div>
                 <!-- 7월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">7월 : 신현교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">7월 : 신현교회</h4>
                 </div>
                 <!-- 9월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">9월 : 더행복해지는 교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">9월 : 더행복해지는 교회</h4>
                 </div>
                 <!-- 10월 수련회 -->
-                <div class="relative bg-indigo-900 text-white p-6 rounded-2xl -ml-2 shadow-xl shadow-indigo-100">
-                    <div class="year-dot active absolute -left-[36px] top-7 border-4 border-slate-50"></div>
+                <div class="relative bg-indigo-900 text-white p-5 sm:p-6 rounded-2xl -ml-2 shadow-xl shadow-indigo-100">
+                    <div class="year-dot active absolute -left-[28px] sm:-left-[36px] top-7 border-4 border-slate-50"></div>
                     <div class="flex items-center justify-between">
                         <div>
-                            <span class="text-indigo-300 text-[10px] font-black tracking-widest block mb-1 uppercase">특별 일정</span>
-                            <h4 class="text-xl font-black">10월 : 교역자 수련회</h4>
+                            <span class="text-indigo-300 text-[9px] sm:text-[10px] font-black tracking-widest block mb-1 uppercase">특별 일정</span>
+                            <h4 class="text-lg sm:text-xl font-black tracking-tight">10월 : 교역자 수련회</h4>
                         </div>
-                        <i class="fa-solid fa-leaf text-3xl opacity-30"></i>
+                        <i class="fa-solid fa-leaf text-2xl sm:text-3xl opacity-30"></i>
                     </div>
                 </div>
                 <!-- 11월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">11월 : 시흥제일교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">11월 : 시흥제일교회</h4>
                 </div>
                 <!-- 12월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700">12월 : 지산교회</h4>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700">12월 : 지산교회</h4>
                 </div>
                 <!-- 27년 1월 -->
                 <div class="relative">
-                    <div class="year-dot absolute -left-[38px] top-1.5 border-4 border-slate-50"></div>
-                    <h4 class="text-lg font-bold text-slate-700 tracking-tight flex items-center">
-                        27년 1월 : <span class="ml-2 inline-block w-24 h-6 border-2 border-dashed border-slate-300 rounded-lg bg-slate-100/50"></span>
+                    <div class="year-dot absolute -left-[30px] sm:-left-[38px] top-1.5 border-4 border-slate-50"></div>
+                    <h4 class="text-base sm:text-lg font-bold text-slate-700 tracking-tight flex items-center">
+                        27년 1월 : <span class="ml-2 inline-block w-16 sm:w-24 h-5 sm:h-6 border-2 border-dashed border-slate-300 rounded-md sm:rounded-lg bg-slate-100/50"></span>
                     </h4>
                 </div>
             </div>
         </section>
 
         <!-- 푸터 -->
-        <footer class="bg-indigo-950 text-white p-12 text-center relative overflow-hidden">
+        <footer class="bg-indigo-950 text-white p-8 sm:p-12 text-center relative overflow-hidden">
             <div class="relative z-10">
-                <p class="text-indigo-300 text-sm mb-8 font-medium">회원 여러분의 모든 소식에 마음을 다해 함께하겠습니다.</p>
-                <div class="inline-flex flex-col sm:flex-row items-center gap-4">
-                    <a href="tel:010-9873-8760" class="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full transition-all group flex items-center">
-                        <i class="fa-solid fa-phone text-yellow-400 mr-3"></i>
-                        <span class="text-sm opacity-70 font-bold">총무 박진규 목사: </span>
-                        <span class="ml-2 font-black text-xl tracking-tight">010-9873-8760</span>
+                <p class="text-indigo-300 text-xs sm:text-sm mb-6 sm:mb-8 font-medium break-keep">회원 여러분의 모든 소식에 마음을 다해 함께하겠습니다.</p>
+                <div class="inline-flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                    <a href="tel:010-9873-8760" class="bg-white/5 hover:bg-white/10 border border-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all group flex items-center justify-center w-full sm:w-auto">
+                        <i class="fa-solid fa-phone text-yellow-400 mr-2 sm:mr-3"></i>
+                        <span class="text-xs sm:text-sm opacity-70 font-bold">총무 박진규 목사: </span>
+                        <span class="ml-1.5 sm:ml-2 font-black text-lg sm:text-xl tracking-tight">010-9873-8760</span>
                     </a>
                 </div>
                 <!-- 하단 장식 아이콘 -->
-                <div class="mt-12 flex justify-center space-x-2">
+                <div class="mt-8 sm:mt-12 flex justify-center space-x-2">
                     <div class="w-1.5 h-1.5 bg-indigo-700 rounded-full"></div>
                     <div class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></div>
                     <div class="w-1.5 h-1.5 bg-indigo-700 rounded-full"></div>
