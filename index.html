@@ -212,17 +212,22 @@
                         <span class="text-slate-900 font-bold text-base sm:text-lg block break-keep">소사감찰</span>
                     </div>
                 </div>
-                <div class="worship-grid py-3 sm:py-4 border-b border-slate-200/50">
+                <div class="worship-grid items-center py-3 sm:py-4 border-b border-slate-200/50">
                     <span class="text-indigo-600 font-black text-[11px] sm:text-xs tracking-tighter uppercase shrink-0">성경봉독</span>
                     <div class="flex items-baseline flex-wrap">
                         <span class="text-slate-900 font-bold text-base sm:text-lg break-keep">김은주 사모</span>
+                        <span class="text-indigo-700 bg-indigo-50 border border-indigo-100 text-[13px] sm:text-[14px] px-2 py-0.5 rounded-md sm:ml-2 mt-1.5 sm:mt-0 font-bold tracking-tight w-fit shadow-sm">
+                            사도행전 2장 43~47절
+                        </span>
                     </div>
                 </div>
-                <div class="worship-grid items-start py-4 sm:py-5 border-b-2 border-indigo-200 bg-white -mx-2 sm:-mx-4 px-4 sm:px-6 rounded-2xl shadow-sm my-2">
-                    <span class="text-indigo-700 font-black text-xs tracking-tighter uppercase mt-1 shrink-0">설교</span>
-                    <div class="w-full">
-                        <h3 class="text-indigo-900 font-black text-lg sm:text-xl mb-1.5 leading-tight break-keep">“살아계신 주”</h3>
-                        <span class="text-slate-600 font-bold text-sm sm:text-base break-keep">심재환 목사</span>
+                <div class="worship-grid items-center py-4 sm:py-5 border-b-2 border-indigo-200 bg-white -mx-2 sm:-mx-4 px-4 sm:px-6 rounded-2xl shadow-sm my-2">
+                    <span class="text-indigo-700 font-black text-xs tracking-tighter uppercase shrink-0">설교</span>
+                    <div class="flex items-baseline flex-wrap">
+                        <span class="text-slate-900 font-bold text-base sm:text-lg break-keep">심재환 목사</span>
+                        <span class="text-indigo-800 font-black text-[15px] sm:text-[17px] sm:ml-2 mt-1 sm:mt-0 w-full sm:w-auto break-keep">
+                            <span class="hidden sm:inline font-normal text-slate-300 mx-1">|</span> “교회다움”
+                        </span>
                     </div>
                 </div>
                 <div class="worship-grid py-3 sm:py-4 border-b border-slate-200/50">
@@ -610,12 +615,12 @@
     <div id="toast" class="copy-toast">계좌번호가 복사되었습니다.</div>
 
     <!-- 찬송가 악보 팝업(모달) -->
-    <div id="hymnModal" class="fixed inset-0 z-[100] hidden bg-black/80 flex items-center justify-center p-4 overflow-y-auto no-print" onclick="closeHymnModal()">
-        <div class="relative w-full max-w-4xl flex flex-col items-center justify-center min-h-full py-10">
+    <div id="hymnModal" class="fixed inset-0 z-[100] hidden bg-black/80 flex items-start justify-center p-4 overflow-y-auto no-print" onclick="closeHymnModal()">
+        <div class="relative w-full max-w-4xl flex flex-col items-center justify-start min-h-full py-10 sm:py-16">
             <button class="absolute top-2 right-2 sm:fixed sm:top-6 sm:right-6 text-white bg-black/50 hover:bg-black/80 rounded-full w-12 h-12 flex items-center justify-center transition-all z-10 shrink-0" onclick="closeHymnModal()">
                 <i class="fa-solid fa-xmark text-2xl"></i>
             </button>
-            <img src="2026-4-praise.jpg" alt="찬송가 28장 악보" class="w-auto max-w-full max-h-[85vh] object-contain bg-white rounded-lg shadow-2xl shrink-0" onclick="event.stopPropagation()">
+            <img src="2026-4%20praise.jpg" alt="찬송가 28장 악보" class="w-full h-auto bg-white rounded-lg shadow-2xl shrink-0" onclick="event.stopPropagation()">
         </div>
     </div>
 
